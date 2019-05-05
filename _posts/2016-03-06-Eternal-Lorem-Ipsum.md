@@ -28,7 +28,7 @@ Given local feature tensors from convolution layers, our target is to leverage g
 
 1. First summarize the global information encoded in local features into representations of Symbolic nodes.
 
-This module aims to produce visual representations \\H^{p s} \in \mathbf{R}^{M \times D^{c}}\\ of all \\M=\not \mathcal{N} |\\ symbolic nodes using $$ X^{l} $$ wh
+This module aims to produce visual representations \\H^{p s} \in \mathbf{R}^{M \times D^{c}}\\ of all \\M=\not \mathcal{N} |\\ symbolic nodes using $ X^{l} $ wh
 
 $$ H^{p s}=\phi\left(A^{p s}, X^{l}, W^{p s}\right) $$
 
