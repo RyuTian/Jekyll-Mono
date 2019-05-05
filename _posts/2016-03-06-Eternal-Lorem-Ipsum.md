@@ -28,8 +28,8 @@ Given local feature tensors from convolution layers, our target is to leverage g
 
 1. First summarize the global information encoded in local features into representations of Symbolic nodes.
 
-This module aims to produce visual representations \\H^{p s} \in \mathbf{R}^{M \times D^{c}}\\ of all $ M=\not \mathcal{N} | $ symbolic nodes using $ X^{l} $ wh
+This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all $ M=\not \mathcal{N} | $ symbolic nodes using $ X^{l} $ wh
 
 $$ H^{p s}=\phi\left(A^{p s}, X^{l}, W^{p s}\right) $$
 
-\\X^{l} \in \mathbf{R}^{H^{l} \times W^{l} \times D^{l}}\\ represents the feature tensor after \\l-th\\ concolution layer as the module inputs, where \\H^{l}\\ and \\W^{l}\\ are height and weight of feature maps while \\D^{l}\\ is the channel number.
+$ X^{l} \in \mathbf{R}^{H^{l} \times W^{l} \times D^{l}} $ represents the feature tensor after $ l-th $ concolution layer as the module inputs, where $ H^{l} $ and $ W^{l} $ are height and weight of feature maps while $ D^{l} $ is the channel number.
