@@ -10,3 +10,10 @@ The last author of this paper is Eric P. Xing, which is my idol. And i have houn
 
 ## Symbolic Graph Reasoning Meets Convolutions
 -----
+The proposed method is illustrated below:
+
+![title](../images/sgr-2.png)
+
+It is composed of three parts, we will dig out these components one by one.
+
+# Local-to-Semantic Voting Module
