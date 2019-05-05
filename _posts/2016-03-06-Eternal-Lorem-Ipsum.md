@@ -19,11 +19,11 @@ It is composed of three parts, we will dig out these components one by one.
 ### Local-to-Semantic Voting Module
 type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 
-<font color=red size=8 face="黑体">purpose:</font>
+#### Purpose:
 
 Given local feature tensors from convolution layers, our target is to leverage global graph Reasoning to enhance local features with external structured knowledge.
 
-<font color=red size=8 face="黑体">How to do:</font>
+#### How to do:
 
 1. First summarize the global information encoded in local features into representations of Symbolic nodes.
 
