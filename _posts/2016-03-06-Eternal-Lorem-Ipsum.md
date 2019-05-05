@@ -17,7 +17,8 @@ The proposed method is illustrated below:
 It is composed of three parts, we will dig out these components one by one.
 
 ### Local-to-Semantic Voting Module
-type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 #### Purpose:
 
