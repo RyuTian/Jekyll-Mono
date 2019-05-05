@@ -18,7 +18,7 @@ It is composed of three parts, we will dig out these components one by one.
 
 ### Local-to-Semantic Voting Module
 
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 #### Purpose:
 
