@@ -32,4 +32,4 @@ This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \
 
 $$ H^{p s}=\phi\left(A^{p s}, X^{l}, W^{p s}\right) $$
 
-$ X^{l} \in \mathbf{R}^{H^{l} \times W^{l} \times D^{l}} $ represents the feature tensor after $ l-th $ concolution layer as the module inputs, where $ H^{l} $ and $ W^{l} $ are height and weight of feature maps while $$ D^{l} $$ is the channel number.
+$ X^{l} \in \mathbf{R}^{H^{l} \times W^{l} \times D^{l}} $ represents the feature tensor after $ l-th $ concolution layer as the module inputs, where $$ H^{l} $$ and $$ W^{l} $$ are height and weight of feature maps while $$ D^{l} $$ is the channel number.
