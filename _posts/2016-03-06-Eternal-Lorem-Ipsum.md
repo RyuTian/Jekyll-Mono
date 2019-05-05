@@ -6,7 +6,7 @@ author: RyuTian
 
 The last author of this paper is Eric P. Xing, which is my idol. And i have hounor to see him in Sanya early in this year. This paper is the newest work advanced by him and published on Neurips 2018.
 
-![article title](https://github.com/RyuTian/RyuTian.github.io/blob/master/images/sgr_1.png)
+![article title](D:/Users/tianl/Documents/GitHub/RyuTian.github.io/images/sgr_1.png)
 
 ## Symbolic Graph Reasoning Meets Convolutions
 -----
