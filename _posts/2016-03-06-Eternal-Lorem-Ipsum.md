@@ -16,4 +16,4 @@ The proposed method is illustrated below:
 
 It is composed of three parts, we will dig out these components one by one.
 
-# Local-to-Semantic Voting Module
+### Local-to-Semantic Voting Module
