@@ -44,6 +44,6 @@ $$ a_{x_{i} \rightarrow n}=\frac{\exp \left(W_{n}^{a T} x_{i}\right)}{\sum_{n \i
 
 Here $ W_{n}^{a} \in \mathbf{R}^{D^{l} \times M} $ is a trainable weight matrix for calculating voting weights. It's convenient to know that $ a_{x_{i} \rightarrow n} \in \mathbf{R}^{M} $, when go through all of the local features $x_{i}$, where $ i=1,...,H \times W $, and all of the $ a_{x_{i} \rightarrow n} $ components the $ A^{p s}_{n} $ for the $ nth $ symbolic node.
 
-
+Please note that $ W^{p s} $ is a global trainable parameter while $ W^{a} $ is a local trainable parameter which contains n components $ W^{a}_{n} $ tranversing all symbolic nodes.
 
 *That's why in the last sentence of the section says "In this way, different local features can adaptively vote to representations of distinct symbolic nodes."*
