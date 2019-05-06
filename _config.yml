@@ -1,7 +1,6 @@
 #
 # This file contains configuration flags to customize your site
 #
-
 # Name of your site (displayed in the header)
 name: RyuTian
 
@@ -52,14 +51,6 @@ baseurl: ""
 #
 
 permalink: /:title/
-
-math:
-    engine: 'mathjax'
-    mathjax:
-        src: "//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-        config:
-            tex2jax:
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ]
                 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
