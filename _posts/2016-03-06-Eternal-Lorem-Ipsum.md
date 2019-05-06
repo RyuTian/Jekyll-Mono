@@ -24,7 +24,7 @@ Given local feature tensors from convolution layers, our target is to leverage g
 
 #### How to do:
 
-1. First summarize the global information encoded in local features into representations of Symbolic nodes.
+First summarize the global information encoded in local features into representations of Symbolic nodes.
 
 This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all symbolic nodes using $ X^{l} $, where $ D^{c} $ is the desired feature dimension for each node $ n $, which is formulated as the function $ \phi $ below:
 
@@ -37,3 +37,7 @@ $ W^{p s} \in \mathbf{R}^{D^{l} \times D^{c}} $ is the trainable transformation 
 $ A^{p s} \in \mathbf{R}^{H^{l} \times W^{l} \times M} $ denotes the voting weights of all local features to each symbolic node.
 
 More specifically, the function $ \phi $ is computed as follows:
+
+$$ H_{n}^{p s}=\sum_{x_{i}} a_{x_{i} \rightarrow n} x_{i} W^{p s} $$
+
+$$ a_{x_{i} \rightarrow n}=\frac{\exp \left(W_{n}^{a T} x_{i}\right)}{\sum_{n \in \mathcal{N}} \exp \left(W_{n}^{a T} x_{i}\right)} $$
