@@ -26,7 +26,7 @@ Given local feature tensors from convolution layers, our target is to leverage g
 
 First summarize the global information encoded in local features into representations of Symbolic nodes.
 
-This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all symbolic nodes using $ X^{l} $, where $ D^{c} $ is the desired feature dimension for each node $ n $, which is formulated as the function $ \phi $ below:
+This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all $ M $ symbolic nodes using $ X^{l} $, where $ D^{c} $ is the desired feature dimension for each node $ n $, which is formulated as the function $ \phi $ below:
 
 $$ H^{p s}=\phi\left(A^{p s}, X^{l}, W^{p s}\right) $$
 
@@ -42,7 +42,7 @@ $$ H_{n}^{p s}=\sum_{x_{i}} a_{x_{i} \rightarrow n} x_{i} W^{p s} $$
 
 $$ a_{x_{i} \rightarrow n}=\frac{\exp \left(W_{n}^{a T} x_{i}\right)}{\sum_{n \in \mathcal{N}} \exp \left(W_{n}^{a T} x_{i}\right)} $$
 
-Here $ W_{n}^{a} \in \mathbf{R}^{D^{l} \times M} $ is a trainable weight matrix for calculating voting weights. It's convenient to know that $ a_{x_{i} \rightarrow n} \in \mathbf{R}^{M} $, when go through all of the local features $x_{i}$, where $ i=1,...,H \times W $, and all of the $ a_{x_{i} \rightarrow n} $ components the $ A^{p s}_{n} $ for the $ nth $ symbolic node.
+Here $ W_{n}^{a} \in \mathbf{R}^{D^{l}} $ is a trainable weight matrix for calculating voting weights. It's convenient to know that $ a_{x_{i} \rightarrow n} \in \mathbf{R}^{1} $, when go through all of the local features $x_{i}$, where $ i=1,...,H \times W $, and all of the $ a_{x_{i} \rightarrow n} $ components the $ A^{p s}_{n} \in \mathbf{R}^{H \times W} $ (we omit upper label $ l $ for convenience) for the $ nth $ symbolic node.
 
 Please note that $ W^{p s} $ is a global trainable parameter while $ W^{a} $ is a local trainable parameter which contains n components $ W^{a}_{n} $ tranversing all symbolic nodes.
 
