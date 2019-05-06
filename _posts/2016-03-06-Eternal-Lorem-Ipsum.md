@@ -34,6 +34,6 @@ $ X^{l} \in \mathbf{R}^{H^{l} \times W^{l} \times D^{l}} $ represents the featur
 
 $ W^{p s} \in \mathbf{R}^{D^{l} \times D^{c}} $ is the trainable transformation matrix for converting each local feature $ x_{i} \in X^{l} $ into the dimension $ D^{c} $.
 
-$ A^{p s} \in \mathbf{R}^{H^{l} \times W^{l} \times M $ denotes the voting weights of all local features to each symbolic node.
+$ A^{p s} \in \mathbf{R}^{H^{l} \times W^{l} \times M} $ denotes the voting weights of all local features to each symbolic node.
 
 More specifically, the function $ \phi $ is computed as follows:
