@@ -16,7 +16,7 @@ The proposed method is illustrated below:
 
 It is composed of three parts, we will dig out these components one by one.
 
-### Local-to-Semantic Voting Module
+### PART I: Local-to-Semantic Voting Module
 
 #### Purpose:
 
@@ -47,3 +47,7 @@ Here $ W_{n}^{a} \in \mathbf{R}^{D^{l}} $ is a trainable weight matrix for calcu
 Please note that $ W^{p s} $ is a global trainable parameter while $ W^{a} $ is a local trainable parameter which contains n components $ W^{a}_{n} $ tranversing all symbolic nodes.
 
 *That's why in the last sentence of the section says "In this way, different local features can adaptively vote to representations of distinct symbolic nodes."*
+
+### PART II: Graph Reasoning Module
+
+to be continue
