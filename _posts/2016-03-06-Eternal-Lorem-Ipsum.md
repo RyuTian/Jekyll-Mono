@@ -41,3 +41,5 @@ More specifically, the function $ \phi $ is computed as follows:
 $$ H_{n}^{p s}=\sum_{x_{i}} a_{x_{i} \rightarrow n} x_{i} W^{p s} $$
 
 $$ a_{x_{i} \rightarrow n}=\frac{\exp \left(W_{n}^{a T} x_{i}\right)}{\sum_{n \in \mathcal{N}} \exp \left(W_{n}^{a T} x_{i}\right)} $$
+
+Here $ W^{a}=\left\{W_{n}^{a}\right\} \in \mathbf{R}^{D^{l} \times M} $ is a trainable weight matrix for calculating voting weights. It's convenient to know that $ a_{x_{i} \rightarrow n} \in \mathbf{R}^{M} $, when go through all of the local features $x_{i}$, where $ i=1,...,H \times W $, and all of the $ a_{x_{i} \rightarrow n} $ components the $ {A^{p s}}_{n} $ for the $ nth $ symbolic node.
