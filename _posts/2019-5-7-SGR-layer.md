@@ -22,6 +22,8 @@ It is composed of three parts, we will dig out these components one by one.
 
 Given local feature tensors from convolution layers, our target is to leverage global graph Reasoning to enhance local features with external structured knowledge.
 
+**keywords: voting matrix**
+
 #### How to do:
 
 First summarize the global information encoded in local features into representations of Symbolic nodes. The procedure of this part is marked by green box below:
@@ -55,9 +57,23 @@ Please note that $ W^{p s} $ is a global trainable parameter while $ W^{a} $ is 
 #### Purpose:
 Based on visual evidence of symbolic nodes, the reasoning guided by structured knowledge is employed to leverage semantic constraints from human commonsense to evolve global representations of symbolic nodes.
 
+**keywords: propogation rule, adjacency matrix**
+
 #### How to do:
 We incorporate both linguistic embedding of each symbolic node and knowledge connections for performing graph reasoning. The procedure of this part is marked by blue box below:
 
 ![title](../images/sgr-3.2.png)
 
-Concretely speaking, for each symbolic node $ n \in \mathcal{N} $
+Concretely speaking, for each symbolic node $ n \in \mathcal{N} $, we use fasttext (the off-the-shelf word vectors) as its linguistic embedding, denoted as $ \mathcal{S}=\left\{s_{n}\right\} $, where $ s_{n} \in \mathbf{R}^{K} $. As for edges, we need to look at its propogation rule. The graph reasoning module performs graph propogation over representations $ H^{p s} $ of all symbolic nodes via the matrix multipulation form, resulting in the evolved features $ H^{g} $:
+
+$$ H^{g}=\sigma\left(A^{g} B W^{g}\right) $$
+
+**Here $ B=\left[\sigma\left(H^{p s}\right), \mathcal{S}\right] \in \mathbf{R}^{M \times\left(D^{c}+K\right)} $ concat features of transformed $ H^{p s} $ via the function $ \sigma(.) $ and the linguistic embedding $ \mathcal{S} $.**
+
+$ W^{g} \in \mathbf{R}^{\left(D^{c}+K\right) \times\left(D^{c}\right)} $ is a trainable weight matrix.
+
+**The node adjacency weight $ a_{n \rightarrow n^{\prime}} \in A^{g} $ is defined according to the edge connections in $ \left(n, n^{\prime}\right) \in \mathcal{E} $ (Here adjacency matrix is predefined). The edge connections can be soft weights (e.g. 0.8) or hard weights ({0, 1}) according to different knowledge graph resources.**
+
+Further more, we add the self-loop as well as norm $ A^{g} $ inspired from GCNs. The overall formulation arrives in:
+
+$$  $$
