@@ -64,7 +64,7 @@ We incorporate both linguistic embedding of each symbolic node and knowledge con
 
 ![title](../images/sgr-3.2.png)
 
-Concretely speaking, for each symbolic node $ n \in \mathcal{N} $, we use fasttext (the off-the-shelf word vectors) as its linguistic embedding, denoted as $ \mathcal{S}=\left{s_{n}\right} $, where $ s_{n} \in \mathbf{R}^{K} $. As for edges, we need to look at its propogation rule. The graph reasoning module performs graph propogation over representations $ H^{p s} $ of all symbolic nodes via the matrix multipulation form, resulting in the evolved features $ H^{g} $:
+Concretely speaking, for each symbolic node $ n \in \mathcal{N} $, we use fasttext (the off-the-shelf word vectors) as its linguistic embedding, denoted as $ \mathcal{S}=\left(s_{n}\right) $, where $ s_{n} \in \mathbf{R}^{K} $. As for edges, we need to look at its propogation rule. The graph reasoning module performs graph propogation over representations $ H^{p s} $ of all symbolic nodes via the matrix multipulation form, resulting in the evolved features $ H^{g} $:
 
 $$ H^{g}=\sigma\left(A^{g} B W^{g}\right) $$
 
