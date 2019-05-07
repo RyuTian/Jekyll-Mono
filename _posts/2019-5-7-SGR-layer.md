@@ -24,7 +24,9 @@ Given local feature tensors from convolution layers, our target is to leverage g
 
 #### How to do:
 
-First summarize the global information encoded in local features into representations of Symbolic nodes.
+First summarize the global information encoded in local features into representations of Symbolic nodes. The procedure of this part is marked by green box below:
+
+![title](../images/sgr-3.3.png)
 
 This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all $ M $ symbolic nodes using $ X^{l} $, where $ D^{c} $ is the desired feature dimension for each node $ n $, which is formulated as the function $ \phi $ below:
 
@@ -50,4 +52,12 @@ Please note that $ W^{p s} $ is a global trainable parameter while $ W^{a} $ is 
 
 ### PART II: Graph Reasoning Module
 
-to be continue
+#### Purpose:
+Based on visual evidence of symbolic nodes, the reasoning guided by structured knowledge is employed to leverage semantic constraints from human commonsense to evolve global representations of symbolic nodes.
+
+#### How to do:
+We incorporate both linguistic embedding of each symbolic node and knowledge connections for performing graph reasoning. The procedure of this part is marked by blue box below:
+
+![title](../images/sgr-3.2.png)
+
+Concretely speaking, for each symbolic node $ n \in \mathcal{N} $
