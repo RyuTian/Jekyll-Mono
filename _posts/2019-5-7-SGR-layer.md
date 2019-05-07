@@ -28,7 +28,7 @@ First summarize the global information encoded in local features into representa
 
 ![title](../images/sgr-3.3.png)
 
-This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all $ M $ symbolic nodes using $ X^{l} $, where $ D^{c} $ is the desired feature dimension for each node $ n $, which is formulated as the function $ \phi $ below:
+This module aims to produce visual representations $ H^{p s} \in \mathbf{R}^{M \times D^{c}} $ of all $ M = |\mathcal{N}| $ symbolic nodes using $ X^{l} $, where $ D^{c} $ is the desired feature dimension for each node $ n $, which is formulated as the function $ \phi $ below:
 
 $$ H^{p s}=\phi\left(A^{p s}, X^{l}, W^{p s}\right) $$
 
